@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{margin: 0; padding:0;}
+ul{list-style: none;}
+a{color:#000; text-decoration: none;}
+img{border:0; vertical-align: top;}
+
+
+#header{
+  width: 80%; margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header h1 img{width: 40px;}
+#header .gnb{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+#header .gnb li a{
+  color: #5e5e5e
+}
+#header input{
+  width: 100px;height: 35px;
+  font-size: 16px;
+  color: rgb(91, 64, 156);
+  background-image: linear-gradient(to left, rgb(157, 157, 255), pink, rgb(172, 249, 255));
+  border: none;
+  cursor: pointer;
+}
+
+---------------
+#section{
+  width: 100%;
+}
+#section .sec1{
+  width: 100%;
+  height: 679px;
+  box-shadow: 0px 3px 3px rgb(231, 231, 231);
+  /* background-color: rgb(255, 255, 72); */
+}
+#section .sec1 .container-fluid{
+  width: 100%;
+  position: relative;
+}
+
+#faces{
+  position: absolute;
+  left: 25%;
+  transition: all 0.3s;
+  /* background-color: aqua; */
+}
+#faces:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.face{
+  height: 600px; 
+  width: 50%;
+  float: left;
+  background-size: cover;
+}
+#face1{
+  background-image: url(images/designer.png);
+  opacity: 0.5;
+}
+#face2{
+  background-image: url(images/coder.png);
+  background-position: 100% 0;
+}
+
+.text{
+  position: absolute;
+  padding: 20px;
+  top: 30%;
+  z-index: 3;
+  color: #5e5e5e;
+}
+.text h1{
+  font-size: 4.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#text1{
+  left: 300px;
+}
+#text2{
+  right: 200px;
+}
+
+
+/* ----footer-------- */
+#footer p{
+  text-align: center; 
+  color: #5e5e5e;
+  padding-top: 50px;
+  font-size: 13px;}
