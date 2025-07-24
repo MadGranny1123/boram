@@ -252,7 +252,7 @@
                       <h2>드라마 포스터</h2>
                       <p>마스크를 통한 합성 작업</p>
                       <p class="more">
-                        <a href="#" class="view-more-btn">view more</a>
+                        <a href="#" class="view-more-btn" data-image="images/drama.jpg">view more</a>
                       </p>
                     </div>
                   </li>
@@ -262,7 +262,7 @@
                       <h2>K2 웹사이트</h2>
                       <p>웹사이트 디자인 리뉴얼 시안 작업</p>
                       <p class="more">
-                        <a href="#" class="view-more-btn">view more</a>
+                        <a href="#" class="view-more-btn" data-image="images/k2.jpg">view more</a>
                       </p>
                     </div>
                   </li>
@@ -272,7 +272,7 @@
                       <h2>노키아 헤드폰</h2>
                       <p>간단한 상세페이지 작업</p>
                       <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/full_k2.png">view more</a>
+                        <a href="#" class="view-more-btn" data-image="images/nokia.jpg">view more</a>
                       </p>
                     </div>
                   </li>
@@ -282,7 +282,7 @@
                       <h2>세일 배너</h2>
                       <p>세일 배너 제작</p>
                       <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/full_k2.png">view more</a>
+                        <a href="#" class="view-more-btn" data-image="images/sale.jpg">view more</a>
                       </p>
                     </div>
                   </li>
@@ -292,7 +292,7 @@
                       <h2>무신사 포스터</h2>
                       <p>마스크를 통한 포스터 작업</p>
                       <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/full_k2.png">view more</a>   
+                        <a href="#" class="view-more-btn" data-image="images/mss.jpg">view more</a>   
                       </p>
                     </div>
                   </li>
@@ -302,7 +302,7 @@
                       <h2>전시회 포스터</h2>
                       <p>전시회 포스터 제작</p>
                       <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/full_k2.png">view more</a>
+                        <a href="#" class="view-more-btn" data-image="images/poster.jpg">view more</a>
                       </p>
                     </div>
                   </li>
@@ -313,10 +313,16 @@
         </div>
     </div>
   </div>
-
   <div id="footer">
     <p>ⓒ 2025 HWANG BORAM. All right reserved.</p>
   </div>
+
+<!-- ===== 모달 구조 ===== -->
+    <div id="imageModal" class="modal" style="display:none;">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+
 
 
   <!-- 자바스크립트 -->
@@ -344,6 +350,55 @@
         document.querySelector(activeCont).style.display = 'block';
       });
     }
+
+
+    // 모달 요소 선택
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close");
+
+    // 모든 view more 버튼에 클릭 이벤트 추가
+    document.querySelectorAll(".view-more-btn").forEach(btn => {
+      btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        const imgSrc = btn.dataset.image;
+
+        if (imgSrc) {
+          modal.style.display = "block";
+          modalImg.src = imgSrc;
+        }
+      });
+    });
+
+    // 닫기 버튼 클릭 시 모달 숨기기
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // 배경 클릭 시 모달 닫기
+    window.onclick = function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    modalImg.onload = function () {
+  const maxWidth = 1000;  // 화면에 너무 커 보이지 않게 제한
+  const scale = 0.6;
+
+  const originalWidth = modalImg.naturalWidth;
+  const originalHeight = modalImg.naturalHeight;
+
+  // 원본이 너무 크면 60% 축소, 아니면 원본 사이즈
+  if (originalWidth > maxWidth) {
+    modalImg.style.width = originalWidth * scale + "px";
+    modalImg.style.height = originalHeight * scale + "px";
+  } else {
+    modalImg.style.width = originalWidth + "px";
+    modalImg.style.height = originalHeight + "px";
+  }
+};
+
   </script>
 </body>
 </html>

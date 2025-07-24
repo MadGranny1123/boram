@@ -329,9 +329,43 @@ body{font-family: 'Pretendard';}
 }
 
 
+/* 모달 배경 */
+.modal {
+  position: fixed;
+  z-index: 999;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
 
+/* 모달 이미지 */
+.modal-content {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
+/* 닫기 버튼 */
+.close {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90% !important;
+    height: auto !important;
+  }
+}
 
 
 
