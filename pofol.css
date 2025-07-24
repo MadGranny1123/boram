@@ -4,6 +4,7 @@
 ul{list-style: none;}
 a{color:#000; text-decoration: none;}
 img{border:0; vertical-align: top;}
+body{font-family: 'Pretendard';}
 
 
 #header{
@@ -37,8 +38,8 @@ img{border:0; vertical-align: top;}
 #section .sec1{
   width: 100%;
   height: 679px;
+  margin-top: 150px;
   box-shadow: 0px 3px 3px rgb(231, 231, 231);
-  /* background-color: rgb(255, 255, 72); */
 }
 #section .sec1 .container-fluid{
   width: 100%;
@@ -90,6 +91,244 @@ img{border:0; vertical-align: top;}
 #text2{
   right: 200px;
 }
+
+
+/* ------------section 2---------------- */
+#section .sec2{
+  width: 100%; height: 930px;
+  background-image: url(images/bg_paint_beige.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#section .sec2 .cont_box{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%; 
+  height: 85%;
+  background-color: rgba(174, 174, 174, 0.291);
+  border-radius: 20px;
+  backdrop-filter: blur(4.5px);
+  box-shadow: 0 0 32px 0 rgba(97, 120, 138, 0.425);
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  padding: 20px; 
+}
+#section .sec2 .cont_box .left_pic{
+  width: 30%; height: 99.2%;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+#section .sec2 .cont_box .left_pic img{
+  width: 240px;
+  padding-top: 30px;
+  margin-left: 20%;
+}
+
+#section .sec2 .cont_box .left_pic .pf_txt{
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  letter-spacing: -1px;
+}
+#section .sec2 .cont_box .left_pic .pf_txt h4{
+  font-size: 45px;
+  line-height: 28px;
+}
+#section .sec2 .cont_box .left_pic .pf_txt span{
+  font-size: 17px;
+  color:white;
+}
+
+#section .sec2 .cont_box .left_pic .sub_desc1{
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  margin-left: -25px;
+  font-size: 18px;
+}
+#section .sec2 .cont_box .left_pic .sub_desc1 .last_txt{
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 30px;
+}
+#section .sec2 .cont_box .edu{
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 480px; bottom: 80px;
+  color: white;
+}
+#section .sec2 .cont_box .edu li{
+  width: 50%;
+}
+#section .sec2 .cont_box .edu img{filter: brightness(0) invert(1);}
+#section .sec2 .cont_box .edu>li>p{
+  font-size: 15px;
+  line-height: 15px;
+}
+#section .sec2 .cont_box .edu>li>p span{
+  font-size: 13px;
+  color: #616161;
+  line-height: 20px;
+}
+
+
+#section .sec2 .cont_box .hardskills{
+  width: 70%; 
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  margin-left: 410px;
+}
+
+#section .sec2 .cont_box .hardskills li{
+  width: 50px; height: 50px;
+  background-color: rgba(255, 253, 253, 0.253);
+  border-radius: 50%;
+  backdrop-filter: blur(4.5px);
+  box-shadow: 0 0 32px 0 rgba(97, 120, 138, 0.425);
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#section .sec2 .cont_box .hardskills li:hover{
+  transform: scale(1.2);
+  background-color: rgba(204, 195, 253, 0.623);
+}
+#section .sec2 .hardskills li img{
+  width: 30px;
+}
+
+/* ---------soft skills --------------------- */
+#section .sec2 .cont_box .softskills{
+  width: 67%;
+  position: absolute;
+  top: 30px;
+  left:33.5%;
+  color: white;
+}
+#section .sec2 .cont_box .softskills .container h2{
+  margin-bottom: 20px;
+  margin-left: -80px;
+}
+#section .sec2 .cont_box .softskills .container .row{
+  width: 100%;
+  height: 320px;
+}
+#section .sec2 .cont_box .softskills .container .row .col{
+  width:48%; 
+  height: 150px;
+  background-color: rgba(160, 156, 156, 0.291);
+  border-radius: 20px;
+  backdrop-filter: blur(4.5px);
+  box-shadow: 0 0 32px 0 rgba(97, 120, 138, 0.425);
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  padding: 20px;
+  margin-right: 10px;
+  color: white;
+  font-size: 14px;
+}
+#section .sec2 .cont_box .softskills .container .row .col span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+/* -------section3 : portfolio--------- */
+#section .portfolio{
+  width: 100%;
+  }
+#section .portfolio .wrap{padding:15px; letter-spacing:-0.5px;}
+#section .portfolio .tab_menu{position:relative;}
+#section .portfolio .tab_menu .list{overflow:hidden; margin-left: 90px;}
+#section .portfolio .tab_menu .list li{float:left; margin-right:14px;}
+#section .portfolio .tab_menu .list li.is_on .btn{font-weight:bold; color:rgb(155, 90, 207);}
+#section .portfolio .tab_menu .list .btn{font-size:14px; font-weight: 800;}
+#section .portfolio .tab_menu .cont_area{margin-top:100px;}
+#section .portfolio .tab_menu .cont_area .cont{
+  display:none; 
+  color:#5e5e5e; 
+  text-align:center; 
+  width:100%; height:850px; 
+  line-height:100px;
+  }
+#section .portfolio .tab_menu .cont_area .cont h1{
+  margin-top: 50px;
+  margin-left: -1355px;
+  margin-bottom: 30px;
+  color: #4b4b4b;
+  }
+#section .portfolio .tab_menu .cont_area .cont .siteworks {
+  width: 90%;  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* 👉 아이템을 가운데로 정렬 */
+  flex-wrap: wrap;
+  gap: 15px;
+  }
+#section .portfolio .tab_menu .cont_area .cont .siteworks li{
+  width: calc(33.33% - 10px);  /* 3개씩 배치되도록 1/3씩 너비 설정 */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  }
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.4s ease;
+  text-align: center;
+  line-height: 30px;
+  z-index: 2;
+  transform: translate(-50%, -40%);
+  transition: all 0.4s ease;
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text a{text-decoration: none;}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text a p{
+  width: 100px; height: 35px;
+  background-color: #00000000;
+  border: 1px solid white;
+  color: white;
+  line-height: 30px;
+  font-weight: 300;
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text a p:hover{
+  background-color: rgba(255, 255, 255, 0.651);
+  color: #7a37c7;
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 550px; height: 380px;
+  background:linear-gradient(45deg,rgba(211, 92, 151, 0.705),rgba(86, 172, 143, 0.74), rgba(109, 147, 234, 0.651));
+  opacity: 0;
+  transition: all 0.5s;
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li:hover:after{
+  opacity: 1;
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li:hover .overlay-text {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li:last-child a p{
+  margin-left: 25px;
+}
+
+
+
+
+
+
+
 
 
 /* ----footer-------- */
