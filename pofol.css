@@ -259,7 +259,8 @@ body{font-family: 'Pretendard';}
   }
 #section .portfolio .tab_menu .cont_area .cont h1{
   margin-top: 50px;
-  margin-left: -1355px;
+  text-align: left;
+  margin-left: 130px;
   margin-bottom: 30px;
   color: #4b4b4b;
   }
@@ -291,16 +292,23 @@ body{font-family: 'Pretendard';}
   transition: all 0.4s ease;
 }
 #section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text a{text-decoration: none;}
-#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text a p{
-  width: 100px; height: 35px;
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text p.more {
+  width: 100px; margin: 0 auto;
+  height: 35px;
   background-color: #00000000;
   border: 1px solid white;
   color: white;
   line-height: 30px;
   font-weight: 300;
 }
-#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text a p:hover{
-  background-color: rgba(255, 255, 255, 0.651);
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text p.more a{
+  color: white;
+
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text p.more:hover{
+  background-color: rgba(255, 255, 255, 0.356);
+}
+#section .portfolio .tab_menu .cont_area .cont .siteworks li .overlay-text p.more:hover a{
   color: #7a37c7;
 }
 #section .portfolio .tab_menu .cont_area .cont .siteworks li::after{
@@ -318,9 +326,6 @@ body{font-family: 'Pretendard';}
 #section .portfolio .tab_menu .cont_area .cont .siteworks li:hover .overlay-text {
   opacity: 1;
   transform: translate(-50%, -50%);
-}
-#section .portfolio .tab_menu .cont_area .cont .siteworks li:last-child a p{
-  margin-left: 25px;
 }
 
 
