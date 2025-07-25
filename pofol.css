@@ -411,12 +411,19 @@ body{font-family: 'Pretendard';}
   margin-bottom: 150px;
   color: #5e5e5e;
   font-size: 14px;
-  font-weight: 900;
-  
+  font-weight: 400;
+  line-height: 5px;
+}
+#section .contact .cont_detail p a{
+  color: #5e5e5e;
+}
+#section .contact .cont_detail p:first-of-type{
+  font-size: 28px;
+  margin-bottom:50px;
 }
 #section .contact .cont_detail span{
   color: cadetblue;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
@@ -426,4 +433,5 @@ body{font-family: 'Pretendard';}
   color: #5e5e5e;
   padding-top: 50px;
   padding-bottom: 20px;
-  font-size: 13px;}
+  font-size: 13px;
+}
