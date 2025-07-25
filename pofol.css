@@ -8,10 +8,17 @@ body{font-family: 'Pretendard';}
 
 
 #header{
-  width: 66.5%; margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;   left: 0;
+  z-index: 999;
+  width: 100%;   margin: 0 auto;
+  padding: 30px 325px;
+  background-color: rgba(255, 255, 255, 0.336);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 #header h1 img{width: 40px;}
 #header .gnb{
@@ -20,15 +27,24 @@ body{font-family: 'Pretendard';}
   justify-content: space-between;
 }
 #header .gnb li a{
-  color: #5e5e5e
+  color: #888888
+}
+#header .gnb li a.active {
+  font-weight: bold;
+  color: cadetblue; /* 예쁜 보라 계열로 강조 */
+  text-decoration: underline;
 }
 #header input{
   width: 100px;height: 35px;
   font-size: 16px;
-  color: rgb(91, 64, 156);
-  background-image: linear-gradient(to left, rgb(157, 157, 255), pink, rgb(172, 249, 255));
-  border: none;
+  color: cadetblue;
+  border: 1px solid cadetblue;
+  background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
+}
+#header input:hover{
+  color: white;
+  background-color: cadetblue;
 }
 
 
@@ -50,14 +66,12 @@ body{font-family: 'Pretendard';}
   position: absolute;
   left: 25%;
   transition: all 0.3s;
-  /* background-color: aqua; */
 }
 #faces:after{
   content: "";
   display: block;
   clear: both;
 }
-
 .face{
   height: 600px; 
   width: 50%;
@@ -85,21 +99,21 @@ body{font-family: 'Pretendard';}
   font-weight: bold;
   margin-bottom: 30px;
 }
-#text1{
-  left: 300px;
-}
-#text2{
-  right: 200px;
-}
+#text1{left: 300px;}
+#text2{right: 200px;}
 
 
 /* ------------section 2---------------- */
 #section .sec2{
+  padding-top:50px; 
+}
+#section .sec2 .boxwrap{
   width: 100%; height: 930px;
   background-image: url(images/bg_paint_beige.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 }
 #section .sec2 .cont_box{
   position: absolute;
@@ -112,7 +126,7 @@ body{font-family: 'Pretendard';}
   backdrop-filter: blur(4.5px);
   box-shadow: 0 0 32px 0 rgba(97, 120, 138, 0.425);
   border: 1px solid rgba(255, 255, 255, 0.281);
-  padding: 20px; 
+  padding: 20px;
 }
 #section .sec2 .cont_box .left_pic{
   width: 30%; height: 99.2%;
@@ -242,12 +256,16 @@ body{font-family: 'Pretendard';}
 /* -------section3 : portfolio--------- */
 #section .portfolio{
   width: 100%;
+  padding-top:50px;
   }
-#section .portfolio .wrap{padding:15px; letter-spacing:-0.5px;}
+#section .portfolio .wrap{
+  padding:15px; 
+  letter-spacing:-0.5px;
+}
 #section .portfolio .tab_menu{position:relative;}
 #section .portfolio .tab_menu .list{overflow:hidden; margin-left: 90px;}
 #section .portfolio .tab_menu .list li{float:left; margin-right:14px;}
-#section .portfolio .tab_menu .list li.is_on .btn{font-weight:bold; color:rgb(155, 90, 207);}
+#section .portfolio .tab_menu .list li.is_on .btn{font-weight:bold; color:cadetblue;}
 #section .portfolio .tab_menu .list .btn{font-size:14px; font-weight: 800;}
 #section .portfolio .tab_menu .cont_area{margin-top:70px;}
 #section .portfolio .tab_menu .cont_area .cont{
@@ -369,10 +387,43 @@ body{font-family: 'Pretendard';}
 
 
 
+/* --------------contact-------------------- */
+#section .contact{
+  text-align: center;  
+}
+#section .contact h1{
+  margin-top: 300px;
+  font-size: 200px;
+  font-weight: 900;
+  background-image: linear-gradient(95deg, rgba(162, 0, 255, 0.678),rgba(76, 185, 149, 0.733),rgba(74, 139, 236, 0.897));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#section .cont_txt{
+  margin-top: 20px;
+  font-weight: 500;
+  color: #5e5e5e;
+  font-size: 18px;
+}
+#section .contact .cont_detail{
+  margin-top: 70px;
+  margin-bottom: 150px;
+  color: #5e5e5e;
+  font-size: 14px;
+  font-weight: 900;
+  
+}
+#section .contact .cont_detail span{
+  color: cadetblue;
+  font-size: 18px;
+}
+
 
 /* ----footer-------- */
 #footer p{
   text-align: center; 
   color: #5e5e5e;
   padding-top: 50px;
+  padding-bottom: 20px;
   font-size: 13px;}
