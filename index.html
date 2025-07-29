@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BORAM | designer & publisher</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
   <link rel="stylesheet" href="pofol.css" />
   <link rel="icon" href="images/favicon.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/4a5790af4d.js" crossorigin="anonymous"></script>
+  <!-- Pretendard 폰트 불러오기 (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/static/pretendard.css" />
 </head>
 
 <body>
@@ -156,170 +157,173 @@
 <!-- -------------- section3 : porfolio ----------------- -->
     <div class="portfolio" id="portfolio">
       <div class="wrap">
-        <div class="tab_menu">
-          <div class="cont_area">
+          <div class="tab_menu">
+            <div class="cont_area">
 
-            <ul class="list">
-              <li class="is_on">
-                <a href="#tab1" class="btn">웹 사이트</a>
-              </li>
-              <li>
-                <a href="#tab2" class="btn">웹 디자인</a>
-              </li>
-            </ul>
+              <ul class="list">
+                <li class="is_on">
+                  <a href="#tab1" class="btn">웹 사이트</a>
+                </li>
+                <li>
+                  <a href="#tab2" class="btn">웹 디자인</a>
+                </li>
+              </ul>
 
-            <div id="tab1" class="cont" style="display:block;">
-              <h1>Website works</h1>
-              <div class="tab1_works">
-                <ul class="siteworks">
-                  <li>
-                    <img src="images/wp_culita.png" alt="">
-                    <div class="overlay-text">
-                      <h2>CULITA</h2>
-                      <p>리뉴얼</p>
-                      <p class="more">
-                        <a href="https://madgranny1123.github.io/culita/" target="_blank">
-                          view site
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wp_onsil.png" alt="">
-                    <div class="overlay-text">
-                      <h2>ONSIL</h2>
-                      <p>리뉴얼 : 백엔드 반과 협업</p>
-                      <p class="more">
-                        <a href="https://madgranny1123.github.io/onsil/" target="_blank">
-                          view site
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wp_pascucci.png" alt="">
-                    <div class="overlay-text">
-                      <h2>PASCUCCI</h2>
-                      <p>리뉴얼</p>
-                      <p class="more">
-                        <a href="https://madgranny1123.github.io/pascucci/" target="_blank">
-                          view site
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wp_lamy.png" alt="">
-                    <div class="overlay-text">
-                      <h2>LAMY</h2>
-                      <p>클론코딩</p>
-                      <p class="more">
-                        <a href="https://madgranny1123.github.io/lamy/" target="_blank">
-                          view site
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wp_erom.png" alt="">
-                    <div class="overlay-text">
-                      <h2>EROM</h2>
-                      <p>클론코딩</p>
-                      <p class="more">
-                        <a href="https://madgranny1123.github.io/erom/" target="_blank">
-                          view site
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wp_ediya.png" alt="">
-                    <div class="overlay-text">
-                      <h2>EDIYA</h2>
-                      <p>클론코딩</p>
-                      <p class="more">
-                        <a href="https://madgranny1123.github.io/ediya/" target="_blank">
-                          view site
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  
-                </ul>
+              <div id="tab1" class="cont" style="display:block;">
+                <h1>Website works</h1>
+                <div class="tab1_works">
+                  <ul class="siteworks">
+                    <li>
+                      <img src="images/wp_culita.png" alt="">
+                      <div class="overlay-text">
+                        <h2>CULITA</h2>
+                        <p>리뉴얼<br>[개인 작업]</p>
+                        <p class="more">
+                          <a href="https://madgranny1123.github.io/culita/" target="_blank">
+                            view site
+                          </a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wp_onsil.png" alt="">
+                      <div class="overlay-text">
+                        <h2>ONSIL</h2>
+                        <p>리뉴얼 <br>[백엔드와 협업]</p>
+                        <p class="more">
+                          <a href="https://madgranny1123.github.io/onsil/" target="_blank">
+                            view site
+                          </a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wp_pascucci.png" alt="">
+                      <div class="overlay-text">
+                        <h2>PASCUCCI</h2>
+                        <p>리뉴얼<br>[팀플 작업]</p>
+                        <p class="more">
+                          <a href="https://madgranny1123.github.io/pascucci/" target="_blank">
+                            view site
+                          </a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wp_lamy.png" alt="">
+                      <div class="overlay-text">
+                        <h2>LAMY</h2>
+                        <p>클론코딩<br>[개인 작업]</p>
+                        <p class="more">
+                          <a href="https://madgranny1123.github.io/lamy/" target="_blank">
+                            view site
+                          </a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wp_erom.png" alt="">
+                      <div class="overlay-text">
+                        <h2>EROM</h2>
+                        <p>클론코딩<br>[개인 작업]</p>
+                        <p class="more">
+                          <a href="https://madgranny1123.github.io/erom/" target="_blank">
+                            view site
+                          </a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wp_ediya.png" alt="">
+                      <div class="overlay-text">
+                        <h2>EDIYA</h2>
+                        <p>클론코딩<br>[개인 작업]</p>
+                        <p class="more">
+                          <a href="https://madgranny1123.github.io/ediya/" target="_blank">
+                            view site
+                          </a>
+                        </p>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
               </div>
+              <div id="tab2" class="cont">
+                <h1>Design works</h1>
+                <div class="tab2_works">
+                  <ul class="siteworks">
+                    <li>
+                      <img src="images/wd_secret.png" alt="">
+                      <div class="overlay-text">
+                        <h2>포스터</h2>
+                        <p>마스크를 통한 합성</p>
+                        <p class="more">
+                          <a href="#" class="view-more-btn" data-image="images/drama.jpg">view more</a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wd_k2.png" alt="">
+                      <div class="overlay-text">
+                        <h2>웹사이트 시안</h2>
+                        <p>웹사이트 리뉴얼 시안 작업</p>
+                        <p class="more">
+                          <a href="#" class="view-more-btn" data-image="images/k2.jpg">view more</a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wd_nokia.png" alt="">
+                      <div class="overlay-text">
+                        <h2>헤드폰</h2>
+                        <p>간단한 상세페이지 작업</p>
+                        <p class="more">
+                          <a href="#" class="view-more-btn" data-image="images/nokia.jpg">view more</a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wd_salebanner.png" alt="">
+                      <div class="overlay-text">
+                        <h2>세일 배너</h2>
+                        <p>세일 배너 제작</p>
+                        <p class="more">
+                          <a href="#" class="view-more-btn" data-image="images/sale.jpg">view more</a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wd_mss.png" alt="">
+                      <div class="overlay-text">
+                        <h2>포스터</h2>
+                        <p>마스크를 통한 포스터 작업</p>
+                        <p class="more">
+                          <a href="#" class="view-more-btn" data-image="images/mss.jpg">view more</a>   
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/wd_poster.png" alt="">
+                      <div class="overlay-text">
+                        <h2>포스터</h2>
+                        <p>전시회 포스터 제작</p>
+                        <p class="more">
+                          <a href="#" class="view-more-btn" data-image="images/poster.jpg">view more</a>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>          
             </div>
-            <div id="tab2" class="cont">
-              <h1>Design works</h1>
-              <div class="tab2_works">
-                <ul class="siteworks">
-                  <li>
-                    <img src="images/wd_secret.png" alt="">
-                    <div class="overlay-text">
-                      <h2>드라마 포스터</h2>
-                      <p>마스크를 통한 합성 작업</p>
-                      <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/drama.jpg">view more</a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wd_k2.png" alt="">
-                    <div class="overlay-text">
-                      <h2>K2 웹사이트 시안</h2>
-                      <p>웹사이트 디자인 리뉴얼 시안 작업</p>
-                      <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/k2.jpg">view more</a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wd_nokia.png" alt="">
-                    <div class="overlay-text">
-                      <h2>노키아 헤드폰</h2>
-                      <p>간단한 상세페이지 작업</p>
-                      <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/nokia.jpg">view more</a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wd_salebanner.png" alt="">
-                    <div class="overlay-text">
-                      <h2>세일 배너</h2>
-                      <p>세일 배너 제작</p>
-                      <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/sale.jpg">view more</a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wd_mss.png" alt="">
-                    <div class="overlay-text">
-                      <h2>무신사 포스터</h2>
-                      <p>마스크를 통한 포스터 작업</p>
-                      <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/mss.jpg">view more</a>   
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="images/wd_poster.png" alt="">
-                    <div class="overlay-text">
-                      <h2>전시회 포스터</h2>
-                      <p>전시회 포스터 제작</p>
-                      <p class="more">
-                        <a href="#" class="view-more-btn" data-image="images/poster.jpg">view more</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>          
           </div>
-        </div>
+      </div>
     </div>
+    
+    <!-- section 4 : contact -->
     <div class="contact" id="contact">
-      <h1>CONTACT</h1>
+      <h1 class="cont_tt">CONTACT</h1>
       <p class="cont_txt">
         그동안 배운 것들을 최대한 정리하고, 진심을 담아 작업해보았습니다.<br>
         부족한 부분도 있겠지만, 하나하나 직접 부딪히며 배우고 채워나가고 있습니다.<br>
@@ -334,6 +338,7 @@
         <p><span><i class="fa-brands fa-github"></i></span>　<a href="https://github.com/MadGranny1123/">https://github.com/MadGranny1123/</a></p>
       </div>
     </div>
+  
   </div>
   <div id="footer">
     <p>ⓒ 2025 HWANG BORAM. All rights reserved.</p>

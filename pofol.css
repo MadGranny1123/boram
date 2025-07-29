@@ -4,7 +4,7 @@
 ul{list-style: none;}
 a{color:#000; text-decoration: none !important;}
 img{border:0; vertical-align: top;}
-body{font-family: 'Pretendard';}
+body{font-family: 'Pretendard', sans-serif;}
 
 
 #header{
@@ -22,7 +22,7 @@ body{font-family: 'Pretendard';}
 }
 #header h1 img{width: 40px;}
 #header .gnb{
-  width: 20%;
+  width: 45%;
   display: flex;
   justify-content: space-between;
 }
@@ -105,7 +105,7 @@ body{font-family: 'Pretendard';}
 
 /* ------------section 2---------------- */
 #section .sec2{
-  padding-top:50px; 
+  padding-top: 50px; 
 }
 #section .sec2 .boxwrap{
   width: 100%; height: 930px;
@@ -119,7 +119,7 @@ body{font-family: 'Pretendard';}
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 75%; 
+  width: 88%; 
   height: 85%;
   background-color: rgba(174, 174, 174, 0.291);
   border-radius: 20px;
@@ -129,7 +129,8 @@ body{font-family: 'Pretendard';}
   padding: 20px;
 }
 #section .sec2 .cont_box .left_pic{
-  width: 30%; height: 99.2%;
+  width: 30%;
+  height: 99.2%;
   border-right: 1px solid rgb(255, 255, 255);
 }
 #section .sec2 .cont_box .left_pic img{
@@ -139,7 +140,7 @@ body{font-family: 'Pretendard';}
 }
 
 #section .sec2 .cont_box .left_pic .pf_txt{
-  width: 100%;
+  width: 70%; margin: 0 auto;
   text-align: center;
   color: white;
   padding-top: 20px;
@@ -167,15 +168,15 @@ body{font-family: 'Pretendard';}
   line-height: 30px;
 }
 #section .sec2 .cont_box .edu{
-  width: 63%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  left: 480px; bottom: 80px;
+  left:32.5%; bottom: 80px;
   color: white;
 }
 #section .sec2 .cont_box .edu li{
-  width: 50%;
+  width: 55%;
 }
 #section .sec2 .cont_box .edu img{filter: brightness(0) invert(1);}
 #section .sec2 .cont_box .edu>li>p{
@@ -190,11 +191,11 @@ body{font-family: 'Pretendard';}
 
 
 #section .sec2 .cont_box .hardskills{
-  width: 70%; 
+  width: 68%; 
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
-  margin-left: 410px;
+  margin-left: 30.5%;
 }
 
 #section .sec2 .cont_box .hardskills li{
@@ -399,12 +400,13 @@ body{font-family: 'Pretendard';}
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  transition: all 0.3s;
 }
 #section .cont_txt{
   margin-top: 20px;
   font-weight: 500;
   color: #5e5e5e;
-  font-size: 18px;
+  font-size: 24px;
 }
 #section .contact .cont_detail{
   margin-top: 70px;
@@ -435,3 +437,209 @@ body{font-family: 'Pretendard';}
   padding-bottom: 20px;
   font-size: 13px;
 }
+
+/* 1129px ~ 1610px */
+@media all and (min-width:1129px) and (max-width:1610px){
+  #header{padding: 30px 130px;}
+  #header .gnb{width: 50%;}
+  #section .sec2 .cont_box .left_pic img{
+    margin-left: 15%;
+  }
+  #section .sec2 .container .row .col p{
+  font-size: 12px;
+}
+#section .sec2 .boxwrap .edu>li p{
+  line-height: 15px;
+}
+#section .sec2 .boxwrap .edu>li p span{
+  line-height: -10px;
+  font-size: 12px;
+  letter-spacing: -2px;
+}
+}
+
+/* 1041px ~ 1128px */
+@media all and (min-width:1041px) and (max-width:1128px){
+  #header{padding: 30px 100px;}
+  #section .sec2 .cont_box .left_pic{width: 32%}
+  #section .sec2 .cont_box .left_pic img{
+    width: 200px;
+  }
+  #section .sec2 .sub_desc1 .last_txt{
+    letter-spacing: -2px;
+    font-size: 11px;
+  }
+  #section .sec2 .container .row .col p{
+    letter-spacing: -1px;
+    margin-top: -25px;
+  }
+  .softskills .container .row .col p span{
+    display: none;
+  }
+  #section .sec2 .boxwrap .edu{
+    margin-left: -0.5%;
+  }
+  #section .sec2 .boxwrap .edu h5{
+    margin-bottom: -7px;
+  }
+  #section .sec2 .boxwrap .edu li{
+    margin-right: 10px;
+  }
+  #section .sec2 .boxwrap .edu li p,
+  #section .sec2 .boxwrap .edu li p span{
+    line-height: 15px;
+  }
+  #section .sec2 .cont_box{
+    height: 90%;
+  }
+
+}
+/* 906px ~ 1040px */
+  @media all and (min-width:906px) and (max-width:1040px){
+  #header{padding: 30px 100px;}
+  #section .sec2 .cont_box .left_pic img{
+    width: 200px;
+    margin-left: -0.1%;
+  }
+  #section .sec2 .boxwrap .cont_box .left_pic .last_txt{
+    width: 68%; margin: 0 auto;
+    line-height: 26px;
+  }
+  .softskills .container .row{
+    margin-left: 5px;
+  }
+  .softskills .container .row .col{
+    height: 135px;
+  }
+  .softskills .container .row .col p{
+    margin-top: -25px;
+    font-size: 13px;
+  }
+  .softskills .container .row .col p span,
+  #section .sec2 .boxwrap .edu>li p span{
+    display: none;
+  }
+  #section .sec2 .boxwrap .edu{
+    margin-bottom: 60px;
+  }
+  #section .sec2 .hardskills{
+    padding-bottom: 30px;
+    width: 20%;
+    flex-wrap: wrap;
+  }
+  #section .contact h1.cont_tt{
+    font-size: 100px;
+  }
+  #section .cont_txt{font-size: 16px;}
+  
+}
+/* 864px ~ 905px */
+  @media all and (min-width:864px) and (max-width:905px){
+    #header{padding: 30px 150px;}
+    #section .sec2 .cont_box .left_pic img{
+      width: 180px;
+      margin-left: 1%;
+  }
+    #section .sec2 .left_pic .pf_txt h4{
+      margin-left: -20%;
+    }
+    #section .sec2 .sub_desc1 p{
+    font-size: 14px;
+    margin-top: -15px;
+  }
+  #section .sec2 .sub_desc1 .last_txt{
+    letter-spacing: -2px;
+    font-size: 11px;
+    width: 85%; margin: 0 auto;
+  }
+  .softskills .container .row .col{
+    width: 47% !important;
+    margin-left: 0.9%;
+  }
+  #section .sec2 .container .row .col p{
+    letter-spacing: -1px;
+    margin-top: -25px;
+    font-size: 13px;
+  }
+  .softskills .container .row .col p span,
+  #section .sec2 .boxwrap .edu>li p span{
+    display: none;
+  }
+  #section .sec2 .boxwrap .edu{
+    margin-bottom: 60px;
+  }
+  #section .sec2 .boxwrap .edu li{margin-right:20px !important;}
+  #section .sec2 .hardskills{
+    padding-bottom: 50px !important;
+    width: 10%;
+    flex-wrap: wrap;
+  }
+  #section .sec2 .hardskills li{
+    width: 45px !important; height: 45px !important;
+    line-height: 40px !important;
+  }
+  #section .sec2 .hardskills li img{width: 30px;}
+  #section .contact h1.cont_tt{
+    font-size: 100px;
+  }
+  #section .cont_txt{font-size: 16px;}
+  }
+
+  /* 700px ~ 863px */
+  @media all and (min-width:700px) and (max-width:863px){
+    #header{padding: 30px 100px;}
+
+    #section .sec2 .cont_box .left_pic img{
+      width: 180px;
+      margin-left: 1%;
+  }
+
+  #section .sec2 .left_pic .pf_txt h4{
+      margin-left: -10%;
+      font-size: 20px !important;
+      font-weight: bold;
+    }
+    #section .sec2 .sub_desc1 p{
+    font-size: 14px;
+    margin-top: -15px;
+  }
+  #section .sec2 .sub_desc1 .last_txt{
+    letter-spacing: -2px;
+    font-size: 11px;
+    width: 85%; margin: 0 auto;
+  }
+  .softskills .container .row .col{
+    width: 45% !important;
+    margin-left: 2.3%;
+  }
+  #section .sec2 .container .row .col p{
+    letter-spacing: -1px;
+    margin-top: -30px;
+    font-size: 13px;
+  }
+  .softskills .container .row .col p span,
+  #section .sec2 .boxwrap .edu>li p span{
+    display: none;
+  }
+  #section .sec2 .boxwrap .edu li{margin-right:20px;}
+  #section .sec2 .hardskills li{
+    display: none;
+  }
+  #section .contact h1.cont_tt{
+    font-size: 100px;
+  }
+
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li{
+    width: calc(50% - 10px);  /* 2개씩 배치되도록 너비를 1/2로 설정 */
+     /* aspect-ratio: 4 / 3; li의 비율 고정 (원하는 비율로) */
+  }
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   /* 이미지의 중심을 기준으로 자름 */
+    display: block;
+  }
+  #section .cont_txt{font-size: 16px;}
+  }
+  
