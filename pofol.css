@@ -533,60 +533,9 @@ body{font-family: 'Pretendard', sans-serif;}
   #section .cont_txt{font-size: 16px;}
   
 }
-/* 864px ~ 905px */
-  @media all and (min-width:864px) and (max-width:905px){
-    #header{padding: 30px 150px;}
-    #section .sec2 .cont_box .left_pic img{
-      width: 180px;
-      margin-left: 1%;
-  }
-    #section .sec2 .left_pic .pf_txt h4{
-      margin-left: -20%;
-    }
-    #section .sec2 .sub_desc1 p{
-    font-size: 14px;
-    margin-top: -15px;
-  }
-  #section .sec2 .sub_desc1 .last_txt{
-    letter-spacing: -2px;
-    font-size: 11px;
-    width: 85%; margin: 0 auto;
-  }
-  .softskills .container .row .col{
-    width: 47% !important;
-    margin-left: 0.9%;
-  }
-  #section .sec2 .container .row .col p{
-    letter-spacing: -1px;
-    margin-top: -25px;
-    font-size: 13px;
-  }
-  .softskills .container .row .col p span,
-  #section .sec2 .boxwrap .edu>li p span{
-    display: none;
-  }
-  #section .sec2 .boxwrap .edu{
-    margin-bottom: 60px;
-  }
-  #section .sec2 .boxwrap .edu li{margin-right:20px !important;}
-  #section .sec2 .hardskills{
-    padding-bottom: 50px !important;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-  #section .sec2 .hardskills li{
-    width: 45px !important; height: 45px !important;
-    line-height: 40px !important;
-  }
-  #section .sec2 .hardskills li img{width: 30px;}
-  #section .contact h1.cont_tt{
-    font-size: 100px;
-  }
-  #section .cont_txt{font-size: 16px;}
-  }
 
-  /* 700px ~ 863px */
-  @media all and (min-width:700px) and (max-width:863px){
+  /* 700px ~ 905px */
+  @media all and (min-width:700px) and (max-width:905px){
     #header{padding: 30px 100px;}
 
     #section .sec2 .cont_box .left_pic img{
@@ -630,8 +579,7 @@ body{font-family: 'Pretendard', sans-serif;}
   }
 
   #section .portfolio .tab_menu .cont_area .cont .siteworks li{
-    width: calc(50% - 10px);  /* 2개씩 배치되도록 너비를 1/2로 설정 */
-     /* aspect-ratio: 4 / 3; li의 비율 고정 (원하는 비율로) */
+    width: calc(50% - 10px); /* aspect-ratio: 4 / 3; li의 비율 고정 (원하는 비율로) */
   }
   #section .portfolio .tab_menu .cont_area .cont .siteworks li img{
     width: 100%;
@@ -641,5 +589,10 @@ body{font-family: 'Pretendard', sans-serif;}
     display: block;
   }
   #section .cont_txt{font-size: 16px;}
+  #section .contact h1{margin-top: 10px;}
+}
+
+/* 400px ~ 699px */
+  @media all and (min-width:400px) and (max-width:699px){
+    
   }
-  
