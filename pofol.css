@@ -53,9 +53,16 @@ body{font-family: 'Pretendard', sans-serif;}
 }
 #section .sec1{
   width: 100%;
-  height: 679px;
+  height: 753px;
   margin-top: 150px;
   box-shadow: 0px 3px 3px rgb(231, 231, 231);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+#section .sec1.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 #section .sec1 .container-fluid{
   width: 100%;
@@ -63,28 +70,33 @@ body{font-family: 'Pretendard', sans-serif;}
 }
 
 #faces{
-  position: absolute;
+  position: relative;
   left: 25%;
   transition: all 0.3s;
+  height: 753px;
+  transition: width 0.2s ease-out;
 }
-#faces:after{
+/* #faces:after{
   content: "";
   display: block;
   clear: both;
-}
+} */
 .face{
-  height: 600px; 
-  width: 50%;
-  float: left;
-  background-size: cover;
+  height: 753px; 
+  width: 419px;
 }
 #face1{
   background-image: url(images/designer.png);
-  opacity: 0.5;
+  position: absolute;
+  left: 61px;
+  background-repeat: no-repeat;
 }
 #face2{
   background-image: url(images/coder.png);
-  background-position: 100% 0;
+  background-position-x: right;
+  position: absolute;
+  right: 61px;
+  background-repeat: no-repeat;
 }
 
 .text{

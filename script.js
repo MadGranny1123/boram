@@ -1,88 +1,38 @@
-let screenWidth = screen.width - 100;
-let face1 = document.getElementById("face1");
-let face2 = document.getElementById("face2");
-let faces = document.getElementById("faces");
+const sec1 = document.querySelector('.sec1');
+const face1 = document.getElementById('face1');
+const face2 = document.getElementById('face2');
+const faces = document.getElementById('faces');
 
-document.getElementById("face1").style.width = screenWidth/4;
-document.getElementById("face2").style.width = screenWidth/4;
+// ✅ 초기 비율 설정
+const totalFaceWidth = 838;
+const defaultRatio = 0.55; // face2의 비율
+face1.style.width = `${(1 - defaultRatio) * totalFaceWidth}px`;
+face2.style.width = `${defaultRatio * totalFaceWidth}px`;
+faces.style.left = `${25 - (defaultRatio - 0.5) * 10}%`; // left도 초기 설정
 
-let bodyElement = document.querySelector("body");
-bodyElement.addEventListener("mousemove",changeFace, false);
+// 마우스 이벤트 핸들러 함수
+function handleMouseMove(e) {
+  const sec1Width = sec1.offsetWidth;
+  const mouseX = e.clientX - sec1.getBoundingClientRect().left;
 
-let prevX=0;
-let maxWidth = screenWidth/2;
+  let ratio = mouseX / sec1Width;
+  console.log(ratio);
 
+  const face1Width = (1 - ratio) * totalFaceWidth;
+  const face2Width = ratio * totalFaceWidth;
 
-//마우스 방향에 따라 분기
-function changeFace(e){
-  let xDirection = getMouseDirection(e);
-  let face1Width = face1.offsetWidth;
-  let face2Width = face2.offsetWidth;
+  face1.style.width = `${face1Width}px`;
+  face2.style.width = `${face2Width}px`;
 
-  if(xDirection == "left"){
-    moveLeft(face1Width,face2Width);
-  } else {
-    moveRight(face1Width, face2Width);
-  }
+  const leftOffset = 25 - (ratio - 0.5) * 10;
+  faces.style.left = `${leftOffset}%`;
 }
 
-//왼쪽으로 움직인 경우
-function moveLeft(face1Width, face2Width){
-  if(face2Width < maxWidth){
-    face2.style.width = face2Width + 10 + "px";
-    face1.style.width = face1Width - 10 + "px";
-  }
-  //change opacity
-  let percentage = getPercentage(face1Width, screenWidth/4)/100;
-  document.getElementById("text1").style.opacity = percentage>0.2?percentage:0;
+// 등장 및 이벤트 바인딩
+setTimeout(() => {
+  sec1.classList.add('show');
 
-  let percentage = getPercentage(face1Width, screenWidth/4)/100;
-  document.getElementById("text2").style.opacity = percentage>0.2?percentage:0;
-
-  //move image left
-  let picPos = faces.offsetLeft; //faces 부분 >유튜브에선 frontFaceSet 으로 나왔었음.
-  maxLeft =150;
-  if(picPos>maxLeft){
-    faces.style.left = picPos - 4 + "px";
-  }
-  faces.style.left = picPos > maxLeft ? picPos - 4 + "px" : picPos;
-}
-
-
-//오른쪽으로 움직인 경우
-function moveRight(face1Width, face2Width){
-  if(face1Width < maxWidth){
-    face1.style.width = face1Width + 10 + "px";
-    face2.style.width = face2Width - 10 + "px";
-
-    //change opacity
-  let percentage = getPercentage(face1Width, screenWidth/4)/100;
-  document.getElementById("text1").style.opacity = percentage>0.2?percentage:0;
-
-  let percentage = getPercentage(face1Width, screenWidth/4)/100;
-  document.getElementById("text2").style.opacity = percentage>0.2?percentage:0;
-
-  //Move image Right
-  let picPos = faces.offsetLeft;
-  let maxRight = screenWidth/2 - 150;
-  if(picPos>maxRight){
-    faces.style.left = picPos + 4 + "px";
-    }
-  }
-}
-
-
-function getPercentage(width, total){
-  return (width*100)/total;
-}
-
-function getMouseDirection(e){
-  currentX = e.pageX;
-  if(prevX < currentX){
-    dir = "right"
-  } else {
-    dir = "left"
-  }
-  prevX = currentX;
-  return dir;
-}
+  setTimeout(() => {
+    sec1.addEventListener('mousemove', handleMouseMove);
+  }, 2000);
+}, 500);
