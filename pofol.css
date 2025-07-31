@@ -87,11 +87,10 @@ body{font-family: 'Pretendard', sans-serif;}
   width: 25%;
   padding: 20px;
   opacity: 1;
-  text-align: right;
   transition: opacity 0.8s ease;
 }
 #text1 {
-  
+  text-align: right;
 }
 
 /* ------------section 2---------------- */
@@ -429,6 +428,8 @@ body{font-family: 'Pretendard', sans-serif;}
   font-size: 13px;
 }
 
+
+
 /* 1129px ~ 1610px */
 @media all and (min-width:1129px) and (max-width:1610px){
   #header{padding: 30px 130px;}
@@ -583,7 +584,69 @@ body{font-family: 'Pretendard', sans-serif;}
   #section .contact h1{margin-top: 10px;}
 }
 
-/* 400px ~ 699px */
-  @media all and (min-width:400px) and (max-width:699px){
-    
+/* 481px ~ 699px */
+  @media all and (min-width:481px) and (max-width:699px){
+    #header{
+      width: 100%;
+      padding: 30px 30px;
+    }
+
+    #section .sec2 .cont_box .left_pic{
+      width: 35%;
+    }
+    #section .sec2 .cont_box .left_pic img{
+      width:100px;
+      margin-left: 1%;
+    }
+    #section .sec2 .left_pic .pf_txt h4{
+      margin-left: -10%;
+      font-size: 20px !important;
+      font-weight: bold;
+    }
+    #section .sec2 .sub_desc1 p{
+    font-size: 13px;
+    margin-top: -15px;
+    letter-spacing: -1px;
+    }
+    #section .sec2 .sub_desc1 .last_txt{
+    letter-spacing: -2px;
+    font-size: 11px;
+    width: 85%; margin: 0 auto;
+    }
+    .softskills .container .row .col{
+    width: 88% !important;
+    margin-left: 12%;
+  }
+  #section .sec2 .container .row .col p{
+    letter-spacing: -1px;
+    margin-top: -30px;
+    font-size: 13px;
+  }
+  #section .sec2 .boxwrap .edu{
+    display: none;
+  }
+  .softskills .container .row .col p span,
+  #section .sec2 .boxwrap .edu>li p span{
+    display: none;
+  }
+  #section .sec2 .boxwrap .edu li{margin-right:20px;}
+  #section .sec2 .hardskills li{
+    display: none;
+  }
+  #section .contact h1.cont_tt{
+    font-size: 100px;
+  }
+
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li{
+    width: calc(50% - 10px); /* aspect-ratio: 4 / 3; li의 비율 고정 (원하는 비율로) */
+  }
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   /* 이미지의 중심을 기준으로 자름 */
+    display: block;
+  }
+  #section .cont_txt{fontㅊ-size: 14px;}
+  #section .contact h1{margin-top: 10px;}
   }
