@@ -6,7 +6,7 @@ a{color:#000; text-decoration: none !important;}
 img{border:0; vertical-align: top;}
 body{font-family: 'Pretendard', sans-serif;}
 
-
+/* ------------ header ---------------- */
 #header{
   display: flex;
   justify-content: space-between;
@@ -41,17 +41,18 @@ body{font-family: 'Pretendard', sans-serif;}
   border: 1px solid cadetblue;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
+  margin-bottom: 15px;
 }
 #header input:hover{
   color: white;
   background-color: cadetblue;
 }
 
-
-
+/* ------------section 1---------------- */
 #section .sec1{
   width: 100%;
   height: 753px;
+  aspect-ratio: 16 / 9 !important;
   margin-top: 100px;
   box-shadow: 0px 3px 3px rgb(231, 231, 231);
   margin-bottom: 50px;
@@ -91,6 +92,12 @@ body{font-family: 'Pretendard', sans-serif;}
 }
 #text1 {
   text-align: right;
+}
+.text h1{
+  color: #616161;
+  font-size: 5em;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
 
 /* ------------section 2---------------- */
@@ -276,12 +283,12 @@ body{font-family: 'Pretendard', sans-serif;}
 #section .portfolio .tab_menu .cont_area .cont .siteworks {
   width: 90%;  margin: 0 auto;
   display: flex;
-  justify-content: center; /* 👉 아이템을 가운데로 정렬 */
+  justify-content: center; 
   flex-wrap: wrap;
   gap: 15px;
   }
 #section .portfolio .tab_menu .cont_area .cont .siteworks li{
-  width: calc(33.33% - 10px);  /* 3개씩 배치되도록 1/3씩 너비 설정 */
+  width: calc(33.33% - 10px); 
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -361,11 +368,10 @@ body{font-family: 'Pretendard', sans-serif;}
 /* 닫기 버튼 */
 .close {
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 60px;
   color: #fff;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -383,7 +389,7 @@ body{font-family: 'Pretendard', sans-serif;}
   text-align: center;  
 }
 #section .contact h1{
-  margin-top: 300px;
+  margin-top: 200px;
   font-size: 200px;
   font-weight: 900;
   background-image: linear-gradient(95deg, rgba(162, 0, 255, 0.678),rgba(76, 185, 149, 0.733),rgba(74, 139, 236, 0.897));
@@ -619,7 +625,7 @@ body{font-family: 'Pretendard', sans-serif;}
   }
   #section .sec2 .container .row .col p{
     letter-spacing: -1px;
-    margin-top: -30px;
+    /* margin-top: -20px; */
     font-size: 13px;
   }
   #section .sec2 .boxwrap .edu{
@@ -647,6 +653,79 @@ body{font-family: 'Pretendard', sans-serif;}
     object-position: center;   /* 이미지의 중심을 기준으로 자름 */
     display: block;
   }
-  #section .cont_txt{fontㅊ-size: 14px;}
-  #section .contact h1{margin-top: 10px;}
+  #section .cont_txt{font-size: 14px;}
+  }
+
+  /* ~ 480px */
+  @media all and (max-width:480px){
+    #header{
+      padding: 30px 10px;
+    }
+    #header .gnb{width: 55%;}
+    #section .sec2 .cont_box .left_pic{
+      width: 35%;
+    }
+    #section .sec2 .cont_box .left_pic img{
+      width:90px;
+      margin-left: 1%;
+    }
+    #section .sec2 .left_pic .pf_txt h4{
+      margin-left: -10%;
+      font-size: 20px !important;
+      font-weight: bold;
+    }
+    #section .sec2 .sub_desc1 p{
+    font-size: 12px;
+    margin-top: -15px;
+    letter-spacing: -1px;
+    }
+    #section .sec2 .sub_desc1 .last_txt{
+    letter-spacing: -2px;
+    font-size: 11px;
+    width: 85%; margin: 0 auto;
+    }
+    #section .sec2 .softskills h2{
+      margin-left: 3px !important; 
+    }
+    #section .softskills .container .row .col{
+    width: 88% !important;
+    margin-left: 12%;
+    margin-bottom: 10px;
+    }
+    #section .sec2 .container .row .col p{
+    letter-spacing: -1px;
+    margin-top: -30px;
+    font-size: 13px;
+    }
+  #section .sec2 .boxwrap .edu,
+  #section .softskills .container .row .col p span,
+  #section .sec2 .boxwrap .edu>li p span,
+  #section .sec2 .hardskills li{
+    display: none;
+  }
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li{
+    width: calc(90% - 10px);
+  }
+  #section .portfolio .tab_menu .cont_area .cont .siteworks li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  #section .portfolio .tab_menu .siteworks li .overlay-text h2{
+    font-size: 18px;
+  }
+  #section .portfolio .tab_menu .siteworks li .overlay-text p{
+    font-size: 14px;
+  }
+  #section .contact h1{
+    margin-top: 450px;
+    font-size: 70px;
+  }
+  #section .cont_txt{
+    width: calc(82% - 5px);
+    margin: 0 auto;
+    font-size: 14px;
+  }
   }
